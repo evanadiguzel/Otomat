@@ -1,0 +1,25 @@
+﻿@using Otomat.Models.Siniflar
+@model List<Product>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-2 row-cols-md-3 row-cols-md-4 row-cols-md-5 g-2 m-4">
+        @foreach (var x in Model)
+        {
+            <div class="col">
+                <div class="card text-bg-dark mb-3">
+                    <a href="/Satis/AddSatis/@x.Productid">
+                        <img src="@x.UrunGorsel" class="card-img-top" alt="@x.UrunAciklama">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">@x.UrunAdi</h5>
+                        <p class="card-text">@x.SatisFiyat TL </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

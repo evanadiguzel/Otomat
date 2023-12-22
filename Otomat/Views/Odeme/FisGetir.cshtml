@@ -1,0 +1,38 @@
+﻿@model Otomat.Models.Siniflar.Fis
+@{
+    ViewBag.Title = "FisGetir";
+    Layout = "~/Views/Shared/_DefaultLayout.cshtml";
+}
+
+<div class="container" style="background-color: #212529; width: 500px; height: 550px; position: center; margin-top: 10px; border: 5px solid #808080">
+    <form class="form-group" method="post">
+        <h5 style="color:white;margin-top:25px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-cart3" viewBox="0 0 16 16" alignment-baseline="central">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+            </svg>Fiş
+        </h5>
+        <div class="form-control" style="margin-top:25px">
+            <label for="exampleFormControlSelect1">Ürün Adı :</label>
+            <input type="text" id="Deger1.UrunAdi" name="Deger1.UrunAdi" class="form-control" value="@Model.Deger1">
+
+            <label for="textInput" class="form-label">Miktar:</label>
+            <input type="text" id="Deger2.SatisAdet" name="Deger2.SatisAdet" class="form-control" value="@Model.Deger2" />
+
+            <label for="textInput" class="form-label">Fiyat:</label>
+            <input type="text" id="Deger2.Fiyat" name="Deger2.Fiyat" class="form-control" value="@Model.Deger2" />
+
+            <label for="textInput" class="form-label">Ödenen Tutar:</label>
+            <input type="text" id="Deger3.OdenenTutar" name="Deger3.OdenenTutar" class="form-control"  value="@Model.Deger3"/>
+
+            <label for="textInput" class="form-label">Ödenen Tutar:</label>
+            <input type="text" id="Deger3.Bakiye" name="Deger3.Bakiye" class="form-control" value="@Model.Deger3" />
+
+
+        </div>
+           
+       
+
+    </form>
+
+</div>
+
